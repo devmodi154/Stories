@@ -1,0 +1,12 @@
+<div *ngFor="let story of stories" class="story-item">
+    <h3 (click)="storyClicked(story)">{{ story.title }}</h3>
+    <fa-icon class="stats"[icon]="faEye" matTooltip="Total reads"></fa-icon>
+    <p>{{ story.no_of_reads }}</p>
+    <fa-icon class="stats" [icon]="faBookReader" matTooltip="Currently reading"></fa-icon>
+    <p>{{ story.current_readers }}</p>
+    <p matTooltip="View Story" (click)="viewStory(story)">Read</p>
+    <fa-icon [icon]="faEdit" (click)="editStory(story)" matTooltip="Edit"></fa-icon>
+    <fa-icon [icon]="faTrash" [styles]="{'color': 'crimson'}" (click)="deleteStory(story)" matTooltip="Delete"></fa-icon>
+</div>
+<br>
+<button matTooltip="Add a new story" (click)="newStory()">New Story</button>

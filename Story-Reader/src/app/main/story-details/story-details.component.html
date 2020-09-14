@@ -1,0 +1,25 @@
+<div *ngIf="story">
+  <h1> {{ story.title }} </h1>
+  <!-- <fa-icon [icon]="faStar" [ngClass]="{'orange': story.avg_ratings > 0}"></fa-icon>
+  <fa-icon [icon]="faStar" [ngClass]="{'orange': story.avg_ratings > 1}"></fa-icon>
+  <fa-icon [icon]="faStar" [ngClass]="{'orange': story.avg_ratings > 2}"></fa-icon>
+  <fa-icon [icon]="faStar" [ngClass]="{'orange': story.avg_ratings > 3}"></fa-icon>
+  <fa-icon [icon]="faStar" [ngClass]="{'orange': story.avg_ratings > 4}"></fa-icon> -->
+  <p> {{ story.content }} </p>
+  <!-- <h1> {{ story?.title }} </h1> -->
+  <!-- The "?" after the story object is used as a ternary operation to check if the object is null -->
+  <!-- For objective of checking the object to be null or not before using it can be achieved either way -->
+  <!--       1.) ?: Ternary check -->
+  <!--       2.) ngIf -->
+  <!-- ({{ story.no_of_ratings }})
+
+  <div id="rate-container">
+    <h2> Rate it!</h2>
+    <fa-icon *ngFor="let rate of [1,2,3,4,5]" [icon]="faStar" (mouseenter)="rateHover(rate)"
+    (mouseleave)="rateHovered = 0" (click)="rateClicked(rate)"
+    [ngClass]="{'purple': rateHovered >= rate}"></fa-icon>
+
+  </div> -->
+
+
+</div>

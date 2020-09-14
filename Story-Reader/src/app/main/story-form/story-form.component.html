@@ -1,0 +1,11 @@
+<form [formGroup]="storyForm" (ngSubmit)="saveForm()">
+  <label>Title</label><br>
+  <input type="text" formControlName="title"/><br>
+
+  <label>Content</label><br>
+  <textarea type="text" formControlName="content"></textarea><br>
+  <button type="submit" [disabled]="formDisabled()">
+    <span *ngIf="id">Update</span>
+    <span *ngIf="!id">Create</span>
+  </button>
+</form>

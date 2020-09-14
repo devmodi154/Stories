@@ -1,0 +1,11 @@
+<button (click)="logout()">Logout</button>
+<div class="layout">
+  <app-story-list [stories]="stories" (selectStory)="selectStory($event)" (deletedStory)="deletedStory($event)"
+    (editedStory)="editStory($event)" (createNewStory)="createNewStory()" ></app-story-list>
+  <div> <!-- So that details and form can alter in a single view -->
+    <app-story-details [story]="this.selectedStory" (updateStory)="selectStory($event)"></app-story-details>
+    <!-- updateStory is passed to the selectStory method for updation of story -->
+    <app-story-form *ngIf="editedStory" [story]="this.editedStory"
+     (storyCreated)="storyCreated($event)" (storyUpdated)="storyUpdated($event)"></app-story-form>
+  </div>
+</div>

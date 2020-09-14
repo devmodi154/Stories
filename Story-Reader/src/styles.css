@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  color: #444444;
+  background-color: #f3f3f3;
+  padding: 5px 10px;
+  border-radius: 2px;
+  outline: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  cursor: pointer;
+  font: 19px/23px Montserrat,"Montserrat",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: normal;
+  background-color: #31C4F3;
+  border: 1px solid #31C4F3;
+  color: #fff;
+  font-weight: 700;
+  width: max-content;
+  padding: 13px 22px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .3s ease-in-out 0s;
+
+}
+
+button:disabled {
+  color: #f3f3f3;
+  background-color: #444444;
+  cursor: not-allowed;
+}
+
+button:hover {
+  color: #31C4F3;
+  background-color: #121212; 
+}
+
+input, textarea {
+   width: 100%;
+   font-size: 0.8em;
+   margin: 8px 0;
+   padding: 10px;
+ }
+
+ 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

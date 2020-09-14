@@ -1,0 +1,11 @@
+<button id="logout" (click)="logout()">Logout</button>
+<button (click)="returnToHomepage()">Back</button>
+<div *ngIf="story">
+    <h1> {{ story.title }} </h1>
+    <div class="stats">
+        <p id="total" matTooltip="Total reads"> {{ story.no_of_reads }} </p>
+        <p id="current" matTooltip="Currently reading"> {{ story.current_readers }} </p>
+    </div>
+    <p> {{ story.content }} </p>
+</div>
+  

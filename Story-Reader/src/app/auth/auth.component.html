@@ -1,0 +1,17 @@
+<form [formGroup]="authForm" (ngSubmit)="saveForm()">
+  <p>{{ this.invalidCredentials }}</p>
+  <label>Username</label><br>
+  <input type="text" formControlName="username"/><br>
+
+  <label>Password</label><br>
+  <input type="password" formControlName="password"/><br>
+  <button type="submit">
+    <span *ngIf="!registerMode">Login</span>
+    <span *ngIf="registerMode">Register</span>
+  </button>
+</form>
+<br>
+<div class="newUser">
+  <span *ngIf="!registerMode" (click)="registerMode = true">Don't Have an Account? Register here.</span>
+  <span *ngIf="registerMode" (click)="registerMode = false">Already Have an Account? Login.</span>
+</div>

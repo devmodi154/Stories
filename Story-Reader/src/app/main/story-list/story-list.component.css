@@ -1,0 +1,19 @@
+.story-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto auto auto auto;
+  font-size: 1.5em;
+  margin: 15px 5px;
+  cursor: pointer;
+}
+
+.story-item p {
+  margin-right: 15px;
+}
+
+.story-item fa-icon {
+  margin-right: 15px;
+}
+
+.story-item > .stats{
+  margin-right: 5px;
+}

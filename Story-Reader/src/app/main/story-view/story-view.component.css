@@ -1,0 +1,19 @@
+#logout {
+    float: right;
+}
+
+#total {
+    margin-right: 10px;
+    float: left;
+}
+
+#current {
+    float: right;
+}
+
+.stats {
+    width: fit-content;
+    font-size: 1.5em;
+    margin: 5px 5px;
+    cursor: pointer;
+  }
