@@ -3,7 +3,7 @@
 Story Reader app Assignment for Pratilipi using Django and Angular
 
 ## Development
-  - Clone the repository
+  Clone the repository
 ### Backend
   Change directory to repo folder.
   Install dependencies:
